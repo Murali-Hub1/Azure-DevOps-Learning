@@ -26,3 +26,18 @@ SaaS is a cloud computing model that delivers software applications over the int
                     Accessibility: Access software applications from any device with an internet connection.
                     Managed by Providers: SaaS providers handle maintenance, updates, and security, reducing the burden on end-users.
                     Subscription-Based: SaaS applications are typically offered on a subscription basis, allowing users to pay for what they use.
+
+Azure Resources : The are building blocks of your cloud infrastructure in Microsoft Azure. 
+                  - virtual machines, databases, storage accounts, or any other service offered by Azure.
+
+Resource Group : RG in Azure is a logical container for resources that share the same lifecycle, permissions, and policies.
+                  - It helps you organize and manage related Azure resources efficiently.
+
+Azure Resource Manager (ARM) : It provides a consistent management layer that enables you to deploy and manage resources with declarative templates.
+                   - ARM templates describe the resources you need and their configurations, allowing you to deploy and update resources in a predictable manner. 
+                   - Key Features of Azure Resource Manager:
+                              Template-Based Deployment: ARM uses JSON templates to define the infrastructure and configuration of your Azure resources. This enables repeatable and consistent deployments.
+                              Dependency Management: ARM automatically handles dependencies between resources, ensuring they are deployed in the correct order.
+                              Rollback and Roll-forward: In case of deployment failures, ARM can automatically roll back changes to maintain the desired state, or roll forward to the last known good state.
+                              Tagging and Categorization: You can use tags to label and categorize resources, making it easier to manage and organize your Azure environment. 
+
