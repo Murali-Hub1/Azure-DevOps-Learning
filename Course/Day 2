@@ -1,0 +1,9 @@
+## Infrastructure as a Service (IaaS) 
+
+IaaS is a cloud computing model that provides virtualized computing resources (like virtual machines, storage, and networking components) over the internet.
+          - Key Characteristics of Azure IaaS:
+                Scalability: Easily scale resources up or down based on demand.
+
+                Full Control: Users have control over the underlying infrastructure, including operating systems and applications.
+
+                Flexibility: IaaS is suitable for a wide range of applications, offering flexibility in terms of technology stack.
