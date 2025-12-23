@@ -1,0 +1,22 @@
+Written script for Login Azure, listing VM, Starting VM, login VM via SSH
+
+
+Azure Application Gateway : is a web traffic load balancer that enables you to manage and route traffic to your web applications. 
+Web Application Firewall (WAF) : provides protection against web vulnerabilities. 
+  Key features include:
+    - Load Balancing: Distributes incoming traffic across multiple servers to ensure no single server is overwhelmed.
+    - SSL Termination: Offloads SSL processing, improving the efficiency of web servers.
+    - Web Application Firewall (WAF): Protects web applications from common web vulnerabilities and exploits.
+
+Azure Load Balancer : distributes incoming network traffic across multiple servers to ensure no single server is overwhelmed.
+  - Load Balancing Algorithms, Availability Sets, Inbound and Outbound Traffic
+Azure DNS : is a scalable and secure domain hosting service. It provides name resolution using the Microsoft Azure infrastructure.
+  - Domain Hosting, Integration with Azure Services, Global Availability
+Azure Firewall : is a managed, cloud-based network security service that protects your Azure Virtual Network resources.
+  - Stateful Firewall, Application FQDN Filtering, Threat Intelligence Integration
+Virtual Network Peering : allows connecting Azure Virtual Networks directly, enabling resources in one VNet to communicate with resources in another.
+  - Global VNet Peering, Transitive Routing
+VNet Gateway enables secure communication between on-premises networks and Azure Virtual Networks.
+  - Site-to-Site VPN, Point-to-Site VPN
+Azure VPN Gateway : provides secure, site-to-site connectivity between your on-premises network and Azure.
+  - IPsec/IKE VPN Protocols, High Availability, BGP Support.
