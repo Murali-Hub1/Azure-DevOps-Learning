@@ -21,3 +21,19 @@ Azure Networking Services
 Installed and Deployed Jenkins application in Azure VM:
 - Azure CLI installed and logged in, vm login
 - Commands to install Java and Jenkins
+
+## Day-4
+
+Written script for Login azure and VM:
+- az login → Browser opens
+- Lists VMs table → User sees VMNAME | RESOURCEGROUP
+- User types: VM Name
+- User types: RG
+- Starts VM automatically
+- Waits + gets IP
+- User enters: SSH Key
+- SSH connects!
+
+Azure Networking Advanced
+- Azure App Gateway & WAF, Azure Load Balancer, Azure DNS, Azure Firewall
+- Virtual Network Peering and VNet Gateway, VPN Gateway
