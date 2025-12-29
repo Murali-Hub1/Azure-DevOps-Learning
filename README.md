@@ -49,3 +49,6 @@ The lab includes:
 - User Defined Routes
 - Secure VM access
 - Cleanup cost
+
+<img width="394" height="215" alt="Screenshot 2025-12-29 183245" src="https://github.com/user-attachments/assets/cb75a06d-79b4-48ee-bdcb-ef3c55662c38" />
+
