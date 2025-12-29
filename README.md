@@ -37,3 +37,15 @@ Written script for Login azure and VM:
 Azure Networking Advanced
 - Azure App Gateway & WAF, Azure Load Balancer, Azure DNS, Azure Firewall
 - Virtual Network Peering and VNet Gateway, VPN Gateway
+
+## Day-5
+
+Completed A hands-on Azure enterprise networking lab based on Microsoft best practices.
+
+The lab includes:
+- Hub-Spoke Virtual Network architecture
+- Azure Firewall
+- Azure Bastion
+- User Defined Routes
+- Secure VM access
+- Cleanup cost
