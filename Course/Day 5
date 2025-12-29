@@ -1,0 +1,25 @@
+A hands-on Azure enterprise networking lab based on Microsoft best practices.
+
+The lab includes:
+- Hub-Spoke Virtual Network architecture
+    - Created a resource group in Central India
+    - Created a virtual network with address space 10.0.0.0/16
+    - AzureBastionSubnet (required for Bastion)
+    - AzureFirewallSubnet (For Firewall)
+    - Default subnet for VM
+    - Allowed SSH from Azure Bastion
+    - Allowed HTTP traffic inside VNet
+    - Denied all other inbound traffic
+    - Deployed a Linux VM
+    - No public IP assigned
+- Azure Firewall
+    - Created DNAT rules to access application via laptop browser
+- Azure Bastion
+    - Deployed Azure Bastion (Standard)
+    - Used Bastion to securely connect to VM via browser
+- User Defined Routes
+- Secure VM access
+    - Connected to VM via Azure Bastion
+    - Installed Nginx web server
+    - Started Nginx service
+    - Verified application locall host and web browser.
