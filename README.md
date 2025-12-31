@@ -52,3 +52,7 @@ The lab includes:
 
 <img width="394" height="215" alt="Screenshot 2025-12-29 183245" src="https://github.com/user-attachments/assets/cb75a06d-79b4-48ee-bdcb-ef3c55662c38" />
 
+## Day-6
+
+Azure Networking Interview Q&A
+Azure Storage Services
