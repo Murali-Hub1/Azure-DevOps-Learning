@@ -1,0 +1,44 @@
+Azure Networking Interview Q&A
+
+- What is the difference between NSG and ASG ?
+    ASGs are applied to VMs and are used in conjunction with NSGs. By associating an ASG tag with NSG, you can define rules that apply to a group of VMs sharing the same tag.
+
+- How can you block the access to a your vm from a subnet ?
+    By default traffic is allowed between subnets with in the VNet in Azure. The priority of this rule is 65000, so we need to create a Deny rule with less than 65000 priority number.
+
+- What is the difference between Azure Firewall and NSG ?
+    Firewall: Designed for controlling both outbound and inbound traffic to and from resources within a Virtual Network (VNet).
+    NSG: Typically associated with subnets or individual network interfaces to control traffic within a VNet and between VNets.
+
+- What is the difference between Azure User Data and Custom Data ?
+    User data persists and lives in the cloud, accessible and updatable anytime. 
+    Custom data vanishes after first boot, accessible only during VM creation.
+
+- What is the difference between Azure App Gateway and Azure LB ?
+    Azure Application Gateway:
+      Operates at Layer 7 (Application layer) of the OSI model. 
+      Provides advanced application-level routing, SSL termination, and web application firewall (WAF) capabilities. 
+      Suited for distributing traffic based on application awareness.
+    Azure Load Balancer:
+      Operates at Layer 4 (Transport layer) of the OSI model. 
+      Distributes network traffic based on IP address and port. 
+      Suitable for generic TCP/UDP load balancing without application-specific features.
+
+Azure Storage concepts:
+
+- Azure Blob Storage:
+    It is designed to store and manage large amounts of unstructured data, such as documents, images, videos, and other types of binary and text data.
+    Azure Blob Storage to store artifacts and binaries produced during the build process, ensuring a centralized and scalable storage solution.
+
+- Azure File Storage :
+    It provides the Server Message Block (SMB) protocol for sharing files across multipel applications and VMs in the Azure cloud.
+    In a deployment pipeline, scripts or configuration files stored in Azure File Storage can be mounted to VMs or containers during the deployment process.
+
+- Azure Tables:
+    NoSQL data store service provided by Azure. It stores large amounts of semi-structured data and allows for fast and efficient querying using a key-based access model
+    Data is organized into tables, and each table can store billions of entities, suitable for scenarios like storing configuration data, user profiles, and other data where a key-value or key-attribute data model is appropriate.
+
+- Azure Queue Storage
+    allows decoupling of components in a distributed application. It provides a reliable way to store and retrieve messages between application components, ensuring asynchronous communication.
+    scenarios like handling background jobs, managing tasks asynchronously, and facilitating communication between loosely coupled components.
+    During deployment, scripts can enqueue messages to trigger specific actions or coordinate tasks between different components.
