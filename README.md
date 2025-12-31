@@ -54,5 +54,5 @@ The lab includes:
 
 ## Day-6
 
-Azure Networking Interview Q&A
-Azure Storage Services
+- Azure Networking Interview Q&A
+- Azure Storage Services
