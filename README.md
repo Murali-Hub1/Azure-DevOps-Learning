@@ -56,3 +56,8 @@ The lab includes:
 
 - Azure Networking Interview Q&A
 - Azure Storage Services
+
+## Day-7
+
+- Created storage account via Bicep
+- Difference of ARM templet, Bicep, Terraform, CLI
