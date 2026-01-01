@@ -1,0 +1,23 @@
+Creation of Storage Account by Bicep templet :
+
+@minLength(3)
+@maxLength(15)
+param storageAccountNameSuffix string = 'bybicep01'
+
+@description('Location for storage')
+param location string = resourceGroup().location
+
+var storageAccountName = 'mystr${storageAccountNameSuffix}'
+
+resource storageAccount 'Microsoft.Storage/storageAccounts@2025-06-01' = {
+  name: storageAccountName
+  location: location
+  sku: {name: 'Standard_LRS'}
+  kind: 'StorageV2'
+  tags: {
+    Environment: 'learning'
+  }
+}
+
+@description('Storage account name output')
+output storageAccountName string = storageAccount.name
