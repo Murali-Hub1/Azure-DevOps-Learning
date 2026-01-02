@@ -61,3 +61,14 @@ The lab includes:
 
 - Created storage account via Bicep
 - Difference of ARM templet, Bicep, Terraform, CLI
+
+## Day-8
+
+About Azure Identity and Access Management (IAM)
+- RBAC, Identity Access Management (IAM)
+
+Basic Projects
+- Project 1: Secure Blob Access using Managed Identity
+- Project 2: Automated Blob Upload using Cron
+- Project 3: Azure Monitor and Alerts
+ 
