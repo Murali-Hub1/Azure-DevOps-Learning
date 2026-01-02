@@ -1,0 +1,98 @@
+Azure Cloud Projects
+This repository contains hands-on Azure cloud projects demonstrating secure identity-based access, automation, monitoring, and cloud-native application design.
+
+Key Cloud Concepts Demonstrated
+- Identity and Access Management (IAM)
+- Role-Based Access Control (RBAC)
+- Secretless authentication
+- Automation and scheduling
+- Monitoring and alerting
+  
+################################################################################################################################
+  
+Project 1: Secure Blob Access using Managed Identity
+Implemented secure access to Azure Blob Storage from an Ubuntu VM using system-assigned Managed Identity and Azure RBAC, eliminating the use of storage keys and secrets.
+
+  **Key Skills:**
+    - Azure Managed Identity
+    - Azure RBAC
+    - Azure Blob Storage  
+    - Azure CLI
+    - Linux (Ubuntu)
+
+  Implementation Details
+    - Enabled system-assigned Managed Identity on the VM
+    - Assigned `Storage Blob Data Contributor` role at the storage account scope
+    - Authenticated using `az login --identity`
+    - Uploaded and downloaded blobs using Azure CLI with `--auth-mode login`
+
+#!/bin/bash
+set -e
+STORAGE_ACCOUNT="<storage-account-name>"
+CONTAINER="<container-name>"
+FILE="$HOME/blob-test/sample.txt"
+echo "Uploading file to Blob Storage..."
+az storage blob upload \
+  --account-name $STORAGE_ACCOUNT \
+  --container-name $CONTAINER \
+  --name sample.txt \
+  --file $FILE \
+  --auth-mode login
+echo "Upload completed successfully"
+
+###############################################################################################################################    
+
+Project 2: Automated Blob Upload using Cron
+Automated secure file uploads to Azure Blob Storage using Linux cron jobs and Managed Identity for passwordless authentication.
+
+  **Key Skills:**
+    - Linux cron automation
+    - Azure CLI
+    - Managed Identity
+    - Secure automation workflows
+
+  Implementation Details
+    - Created a Bash script to upload files using Azure CLI
+    - Used `--auth-mode login` for identity-based authentication
+    - Scheduled the script using cron for periodic execution
+    - Implemented logging for execution tracking
+
+  Create a cron command 'crontab -e' after below script and in it past this for every 5 min log
+    '*/5 * * * * /home/azureuser/automation/upload.sh'
+    
+#!/bin/bash
+LOGFILE="$HOME/automation/upload.log"
+STORAGE_ACCOUNT="demoofiam"
+CONTAINER="iam-demo"
+FILE="$HOME/blob-test/sample.txt"
+echo "$(date): Starting upload" >> $LOGFILE
+az storage blob upload \
+  --account-name $STORAGE_ACCOUNT \
+  --container-name $CONTAINER \
+  --name "sample-$(date +%s).txt" \
+  --file $FILE \
+  --auth-mode login >> $LOGFILE 2>&1
+echo "$(date): Upload finished" >> $LOGFILE
+    
+##############################################################################################################################
+
+Project 3: Azure Monitor and Alerts
+Configured monitoring and alerting for Azure Virtual Machines and Storage Accounts using Azure Monitor, Log Analytics, and Action Groups.
+
+  **Key Skills:**
+    - Azure Monitor
+    - Log Analytics Workspace
+    - Metrics and alerts
+    - Cloud operations monitoring
+
+  Monitoring Implemented
+    - VM CPU utilization monitoring
+    - Storage account capacity monitoring
+
+  Alerts Configured
+    - CPU usage alert triggered when utilization exceeds defined threshold
+    - Storage capacity alert triggered when usage exceeds configured limit
+    - Email notifications using Action Groups 
+
+
+  
