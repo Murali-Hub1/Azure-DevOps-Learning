@@ -72,3 +72,12 @@ Basic Projects
 - Project 2: Automated Blob Upload using Cron
 - Project 3: Azure Monitor and Alerts
  
+## Day-9
+
+Azure DevOps - CI Setup
+- working Azure DevOps project
+- Azure DevOps Project Setup
+- Azure Container Registry (ACR) Setup
+- Azure Pipeline creatinon (CI)
+- Self-Hosted DevOps Agent
+- Docker images building automatically on commit
