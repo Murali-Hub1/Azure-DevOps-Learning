@@ -1,0 +1,29 @@
+Azure DevOps - CD Setup
+
+-> Implementing Continuous Deployment (CD)
+    -Created release pipelines.
+      -created 'update-shellscript' file where if there is any change in code it should update to Git.
+
+-> Deploy to Azure Kubernetes Service (AKS) for CD
+    -Created an AKS cluster (GUI)
+    -Attached AKS nodes (VM Scale Sets)
+    -Applied Kubernetes manifests
+    -Configuring Virtual Machine Scale Sets as Node pools in AKS
+    -Why I used:
+      -Kubernetes is the industry standard for container orchestration
+      -Scaling, reliability, and service discovery are automatic
+
+-> GitOps with Argo CD
+    -Argo CD watches Git
+    -Syncs deployment state to AKS
+    -Why I used:
+      -Deployment state stored in Git
+      -Auditable changes can update quick
+
+-> Kubernetes Manifests
+    -Deployment YAML
+    -Service YAML
+    -ConfigMaps
+    -Secrets
+
+End to End CI/CD Demonstration
