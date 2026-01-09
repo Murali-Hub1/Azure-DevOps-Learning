@@ -81,3 +81,12 @@ Azure DevOps - CI Setup
 - Azure Pipeline creatinon (CI)
 - Self-Hosted DevOps Agent
 - Docker images building automatically on commit
+
+## Day-10
+
+Azure DevOps - CD Setup
+
+- CD pipeline that automatically deploys services on successful CI
+- An AKS cluster for production-ready hosting
+- A GitOps workflow with Argo CD
+- Full CI/CD automation for your microservices
