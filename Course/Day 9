@@ -1,0 +1,51 @@
+Azure DevOps - CI Setup
+
+-> Hands-on DevOps real-time project with multiple components, cloned from DockerSamples:
+    -Frontend — Python app for voting
+    -Redis — for capturing votes
+    -.NET worker — processes votes
+    -Postgres Database — to persist data
+    -Node.js app — shows live results
+These represent a typical microservices architecture used in real apps, ideal for practicing DevOps.
+
+-> Azure DevOps Project Setup
+    -Created an Azure DevOps Organization
+    -Created a DevOps Project
+    -Added the code into Azure Repos (Git)
+
+-> Azure Container Registry (ACR) Setup
+    -Created and connected DevOps pipeline to Azure Container Registry to store built Docker images.
+      ACR holds all built Docker images
+      Deployment pipelines pull from ACR
+      Supports container-based applications
+
+-> Azure Pipeline creatinon (CI)
+    -Created YAML pipeline for result, vote and worker.
+    -Stages like:
+      -Build Docker images
+      -Push images to ACR
+        trigger:
+          path:
+            include:
+              - vote/* or result/* or worker/*
+
+        pool:
+          name: 'self-hosted'
+
+        steps:
+          - script: docker build 
+          - script: docker push 
+
+-> Self-Hosted Agent
+    -Created azure lunix VM
+    -Registered it with Azure DevOps agent pool
+    -Used it in pipelines
+
+-> Dockerfile defined:
+    -For vote, result, worker:
+      -FROM — base image
+      -COPY — add source
+      -RUN — install dependencies
+      -EXPOSE — expose service ports
+      -CMD or ENTRYPOINT — startup commands
+
