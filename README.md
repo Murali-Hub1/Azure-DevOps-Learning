@@ -90,3 +90,8 @@ Azure DevOps - CD Setup
 - An AKS cluster for production-ready hosting
 - A GitOps workflow with Argo CD
 - Full CI/CD automation for your microservices
+
+## Day-11
+
+- Azure DevOps Interview Questions
+- Deep dive into AKS
