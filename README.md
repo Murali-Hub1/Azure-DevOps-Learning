@@ -95,3 +95,10 @@ Azure DevOps - CD Setup
 
 - Azure DevOps Interview Questions
 - Deep dive into AKS
+
+## Day-12
+
+- aks-setup
+- secret-store-csi-driver-config
+- verify-integration
+- delete-setup
