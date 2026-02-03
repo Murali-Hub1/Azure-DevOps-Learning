@@ -102,3 +102,7 @@ Azure DevOps - CD Setup
 - secret-store-csi-driver-config
 - verify-integration
 - delete-setup
+
+## Day-13
+
+Script for creating FA
